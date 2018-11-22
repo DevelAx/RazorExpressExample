@@ -1,7 +1,7 @@
-// Create Express app.
+// Create Express web server app.
 const app = require('express')();
 
-// Register the 'Razor' template engine and the default extesnion for the view-template files.
+// Register 'Razor' template engine and the default extesnion for the view-template files.
 // 'Express' will automatically find the Razor module (within the `node-modules` folder) using this extension. 
 // If you decide to skip registering the engine then you will have to explicitly specify the file extension in the route handler.
 app.set('view engine', "raz");
