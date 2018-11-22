@@ -1,0 +1,29 @@
+{
+  "name": "razorexpressexample",
+  "version": "1.0.0",
+  "description": "https://www.npmjs.com/package/razor-express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/DevelAx/RazorExpressExample.git"
+  },
+  "keywords": [
+    "Razor-Express",
+    "example",
+    "Express",
+    "NodeJS"
+  ],
+  "author": "Sergey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevelAx/RazorExpress/issues"
+  },
+  "homepage": "https://github.com/DevelAx/RazorExpress#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "raz": "0.0.6"
+  }
+}
