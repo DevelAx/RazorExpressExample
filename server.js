@@ -1,10 +1,12 @@
 // Create Express web server app.
 const app = require('express')();
-
 // Register 'Razor' template engine and the default extesnion for the view-template files.
 // 'Express' will automatically find the Razor module (within the `node-modules` folder) using this extension. 
 // If you decide to skip registering the engine then you will have to explicitly specify the file extension in the route handler.
 app.set('view engine', "raz");
+// There is an alternative way to register Razor-Express engine (see more in Razor-Express API docs):
+// const raz = require('raz');
+// raz.setup(app, { register: true });
 
 // Create the route for the "Index.raz" view-template.
 // Note that we do not specify the file extension explicitly in this route because we already did it when registering the engine.
@@ -17,7 +19,7 @@ app.get('/', (req, res) => {
 });
 
 // Express-app default port number.
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 1337;
 
 // Starting Express-app.
 const server = app.listen(port, () => {
